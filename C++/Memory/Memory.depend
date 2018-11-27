@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1493658464 source:c:\users\cj\desktop\cs162\memory\main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<locale>
+

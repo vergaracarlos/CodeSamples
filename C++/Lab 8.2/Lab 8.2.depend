@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1488772738 source:c:\users\cj\desktop\cs161\lab 8.2\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

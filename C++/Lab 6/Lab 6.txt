@@ -1,0 +1,78 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int num, sticks = 11, turn = 1, player; //Variables are declared
+    bool winner = false;
+
+        //Game is initiated
+	    cout << "Welcome to NIM! \n\nPlayers will take turns removing 1, 2, or 3 sticks from the initial 11. \n\nThe player removing the last stick wins!\n" << endl;
+        cout << "Player 1, it's your turn! \n" << endl;
+        cout << "The game currently looks like this:\n" << endl;
+
+        for (int i = 0; i < sticks; i++){ //Remaining sticks are displayed
+            char a = '|';
+            cout << a;
+        }
+
+        //User's move
+        cout << "\n\nHow many sticks would you like to remove? (1, 2, or 3): ";
+        cin  >> num;
+
+        while (!winner){
+            //Switch from user 1 to 2
+            turn = turn % 2;
+            switch (turn){
+                case 0: player = 1; break;
+                case 1: player = 2; break;
+            }
+
+            //Invalid option, ask user for input again
+            while(num > 3 || num < 1){
+                cout << "\nThat choice is invalid" << endl;
+                cout << "\nHow many sticks would you like to remove? (1, 2, or 3): ";
+                cin  >> num;
+            }
+
+            //Valid option, subtracts sticks and ask's user 2 for his move
+            if(num > 0 || num < 4){
+
+                sticks -= num;
+
+                //Validates remaining sticks
+                if (sticks > 0){
+                cout << "\nPlayer " << player << " it's your turn!" << endl;
+                cout << "\nThe game currently looks like this:\n" << endl;
+
+                for (int i = 0; i < sticks; i++){ //Displays remaining sticks
+                    char a = '|';
+                    cout << a;
+                }
+
+                cout << "\n\nHow many sticks would you like to remove? (1, 2, or 3): ";
+                cin >> num;
+                }
+
+                //Validates when a player wins
+                if(sticks == 0){
+                    winner = true;
+                    switch (turn){
+                        case 0: cout << "\nCongratulations Player 2, you win!" << endl; break;
+                        case 1: cout << "\nCongratulations Player 1, you win!" << endl; break;
+                    }
+                }
+            }
+
+            //Invalid option, asks user for input again
+            while ((sticks - num) < 0 && winner == false){
+                cout << "\nOops! Can't take more sticks than there are left.\n" << endl;
+                cout << "How many sticks would you like to remove? (1, 2, or 3): ";
+                cin >> num;
+            }
+        turn++;
+        }
+
+    return 0;
+}
