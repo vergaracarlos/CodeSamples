@@ -1,0 +1,94 @@
+body { background-color: #4F6D93;
+       background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+       background-repeat: no-repeat;
+       font-family: Arial, Helvetica, sans-serif;
+       color: #666666; }
+
+#wrapper { margin-left: auto;
+           margin-right: auto;
+           width: 80%;
+           background-color: #90C7E3;
+           min-width: 960px;
+           max-width: 2048px;
+           box-shadow: 3px 3px 3px #333333; }
+
+header { background-color: #000033;
+         background-image: url(sunset.jpg);
+         background-repeat: no-repeat;
+         background-position: right;
+         color: #FFFFFF;
+         text-align: center;
+         height: 60px;
+         padding-top: 10px; }
+
+nav { font-weight: bold;
+      padding: 20px;
+      float: left;
+      width: 160px; }
+
+nav ul { list-style: none;
+         margin: 0;
+         padding-left: 0;
+         font-size: 1.2em; }
+
+nav a:link { color: #000033; }
+
+nav a:visited { color: #344873; }
+
+nav a:hover { color: #FFFFFF; }
+
+main { background-color: #FFFFFF;
+       margin-left: 190px;
+       padding-top: 1px;
+       padding-right: 20px;
+       padding-bottom: 20px;
+       padding-left: 30px;
+       display: block; }
+
+nav a { text-decoration: none; }
+
+h1 { margin-bottom: 0;
+     font-family: Georgia, Times New Roman, serif;
+     margin-top: 0; }
+
+h2 { color: #3399CC;
+     font-family: Georgia, Times New Roman, serif;
+     text-shadow: 1px 1px 1px #CCCCCC; }
+
+h3 { font-family: Georgia, Times New Roman, serif; }
+
+main ul { list-style-image: url(marker.gif); }
+
+dt { color: #000033; }
+
+footer { color: #666666;
+         font-size: 75%;
+         font-style: italic;
+         text-align: center;
+         font-family: Georgia, Times New Roman, serif;
+         padding: 20px;
+         margin-left: 190px;
+         background-color: #FFFFFF; }
+
+.resort { color: #5C7FA3;
+          font-weight: bold; }
+
+#contact { font-size: 90%; }
+
+#homehero { background-image: url(coasthero.jpg);
+            height: 300px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-left: 190px; }
+
+#yurthero { background-image: url(yurthero.jpg);
+            height: 300px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-left: 190px; }
+
+#trailhero { background-image: url(trailhero.jpg);
+             height: 300px;
+             background-size: 100% 100%;
+             background-repeat: no-repeat;
+             margin-left: 190px; }
